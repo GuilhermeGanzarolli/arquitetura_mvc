@@ -16,7 +16,7 @@ class IndexController extends Action {
         
         $produto = Container::getModel('Produto');
 
-        $produtos = $produto->getProdutos();//Neste ponto a controller está megando os dados que está no model
+        $produtos = $produto->getProdutos();//Neste ponto a controller está pegando os dados que está no model
 
         $this->view->dados = $produtos;//Realiza esta atribuição dos dados que foram herdados da Action
 
